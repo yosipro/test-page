@@ -17,7 +17,7 @@
         $bc_id[] = $arr["res"]["videoContentsData"][$i]["id"];
         $bc_category[] = $arr["res"]["videoContentsData"][$i]["category"];
         $video_count = count($arr["res"]["videoContentsData"][$i]["videos"]);
-        for($j = $video_count-1; $j >= 0; $j--){
+        for($j = 0; $j <= $video_count-1; $j++){
           $bc_video_id[$i][] = $arr["res"]["videoContentsData"][$i]["videos"][$j]["id"];
           $bc_video_title[$i][] = $arr["res"]["videoContentsData"][$i]["videos"][$j]["title"];
           $bc_video_url[$i][] = $arr["res"]["videoContentsData"][$i]["videos"][$j]["url"];

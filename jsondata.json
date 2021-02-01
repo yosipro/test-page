@@ -22,7 +22,7 @@
                 {
                     "id":"1-4",
                     "title":"集中力を回復する",
-                    "url":""
+                    "url":"yet"
                 }
             ]
         },
@@ -49,6 +49,111 @@
                     "id":"2-4",
                     "title":"暗記をするのに最適な時間帯とは?",
                     "url":"https://www.youtube.com/watch?v=PqwnqL3m840&list=PLlYDhsPeUSfDhdoyHyaFzCN1C0ltMbhCe"
+                }
+            ]
+        },
+        {
+            "id":"3",
+            "category":"復習",
+            "videos":[
+                {
+                    "id":"3-1",
+                    "title":"復習の重要性",
+                    "url":"yet"
+                },
+                {
+                    "id":"3-2",
+                    "title":"復習するべきタイミング・やり方",
+                    "url":"yet"
+                }
+            ]
+        },
+        {
+            "id":"4",
+            "category":"模試",
+            "videos":[
+                {
+                    "id":"4-1",
+                    "title":"模試の考え方",
+                    "url":"yet"
+                },
+                {
+                    "id":"4-2",
+                    "title":"事前準備",
+                    "url":"yet"
+                },
+                {
+                    "id":"4-3",
+                    "title":"模試の解き方",
+                    "url":"yet"
+                },
+                {
+                    "id":"4-4",
+                    "title":"やり直しの方法",
+                    "url":"yet"
+                }
+            ]
+        },
+        {
+            "id":"5",
+            "category":"受験マインドセット",
+            "videos":[
+                {
+                    "id":"5-1",
+                    "title":"持っておくべき考え方",
+                    "url":"yet"
+                },
+                {
+                    "id":"5-2",
+                    "title":"成績が上がった時",
+                    "url":"yet"
+                },
+                {
+                    "id":"5-3",
+                    "title":"成績が上がらない時",
+                    "url":"yet"
+                }
+            ]
+        },
+        {
+            "id":"6",
+            "category":"人間関係",
+            "videos":[
+                {
+                    "id":"6-1",
+                    "title":"親との付き合い方",
+                    "url":"yet"
+                },
+                {
+                    "id":"6-2",
+                    "title":"友達との付き合い方",
+                    "url":"yet"
+                },
+                {
+                    "id":"6-3",
+                    "title":"学校の先生との付き合い方",
+                    "url":"yet"
+                },
+                {
+                    "id":"6-4",
+                    "title":"塾の先生との付き合い方",
+                    "url":"yet"
+                }
+            ]
+        },
+        {
+            "id":"7",
+            "category":"食事",
+            "videos":[
+                {
+                    "id":"7-1",
+                    "title":"集中力を持続させる為の食事 -考え方-",
+                    "url":"https://www.youtube.com/watch?v=1zwax3KXwS4&list=PLlYDhsPeUSfC7JNwvBG7qgBrXy5lqIdOx"
+                },
+                {
+                    "id":"7-2",
+                    "title":"集中力を持続させる為の食事 -具体-",
+                    "url":"https://www.youtube.com/watch?v=Xrrw83YtCBs&list=PLlYDhsPeUSfC7JNwvBG7qgBrXy5lqIdOx"
                 }
             ]
         }
