@@ -43,47 +43,75 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+    <!-- style.css -->
+    <link rel ="stylesheet" href="styles/style.css"></link>
   </head>
   <body>
     <div class="container">
-      <h1>勉強法動画サイト</h1>
-      <p>あなたの勉強に役立つ動画がきっとあります。</p>
-    </div>
-    <div class="container accordion" id="collapse-accordion">
-      <?php for($i = 0; $i <= $category_count-1; $i++) : ?>
-      <div class="card mb-2">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button
-              class="btn btn-light btn-block text-left"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapse-accordion-<?php echo $i ?>"
-            >
-              <?php echo $bc_category[$i] ?>
-            </button>
-          </h5>
-        </div>
-        <div
-          id="collapse-accordion-<?php echo $i ?>"
-          class="collapse"
-          data-parent="#collapse-accordion"
-        >
-          <?php $count = count($arr["res"]["videoContentsData"][$i]["videos"]) ?>
-          <?php for($j = 0; $j <= $count-1; $j++) : ?>
-          <div class="card-body">
-            <a
-              class="btn btn-light btn-block"
-              href="<?php echo $bc_video_url[$i]{$j} ?>"
-              role="button"
-            >
-              <?php echo $bc_video_title[$i][$j] ?>
-            </a>
-          </div>
-          <? endfor; ?>
-        </div>
+      <!-- トップビュー -->
+      <div class="jumbotron mt-3 text-center">
+        <h1 id="Heading" class="h4 font-weight-bold">勉強法改善ジム</h1>
+        <p class="m-0">あなたの学習効率を上げる為の、<br>科学的に正しい勉強法を解説する動画です.</p>
       </div>
-      <?php endfor; ?>
+
+      <!-- サービスロゴ -->
+      <div class="text-center">
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <p class="d-inline-flex lead serviceLogoText m-0">となりにコーチ</p>
+          <p class="serviceLogo d-inline-flex m-0"><img alt="となりにコーチのサービスロゴ" src="images/serviceLogo.png" class="col img-fluid rounded-0"></p>
+        </div>
+        <p>1人ひとりに最適な勉強法を提案します.</p>
+      </div>
+
+      <!-- コンテンツ -->
+      <!-- カテゴリ一覧 -->
+      <h2 class="h4">カテゴリ一覧</h2>
+      <p class="text-muted">興味のあるカテゴリをタップすると動画の一覧が展開します.</p>
+      <div class="container accordion" id="collapse-accordion">
+        <?php for($i = 0; $i <= $category_count-1; $i++) : ?>
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link btn-block text-left text-truncate"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-accordion-<?php echo $i ?>"
+              >
+                <?php echo $bc_category[$i] ?>
+                <span class="badge badge-secondary badge-pill">Tap</span>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapse-accordion-<?php echo $i ?>"
+            class="collapse"
+            data-parent="#collapse-accordion"
+          >
+            <!-- 動画一覧 -->
+            <div class="card-body">
+              <?php $count = count($arr["res"]["videoContentsData"][$i]["videos"]) ?>
+              <?php for($j = 0; $j <= $count-1; $j++) : ?>
+                <a
+                  class="btn btn-primary btn-block shadow text-truncate"
+                  href="<?php echo $bc_video_url[$i]{$j} ?>"
+                  role="button"
+                >
+                  <?php echo $bc_video_title[$i][$j] ?> <span class="badge badge-light badge-pill"><em class="far fa-hand-pointer"></em></span>
+                </a>
+              <? endfor; ?>
+            </div>
+          </div>
+        </div>
+        <?php endfor; ?>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->

@@ -1,0 +1,44 @@
+body {
+  font-family: "Noto Sans JP";
+}
+
+.jumbotron {
+  /* background: linear-gradient(90deg, $grad1, $grad2); */
+}
+
+#Heading {
+  position: relative;
+  padding: 0 65px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #2c2c2c;
+}
+
+#Heading + p {
+  color: #2c2c2c;
+}
+
+#Heading:before,
+#Heading:after {
+  position: absolute;
+  top: calc(50% - 3px);
+  width: 50px;
+  height: 6px;
+  content: '';
+  border-top: solid 2px #2c2c2c;
+  border-bottom: solid 2px #2c2c2c;
+}
+
+#Heading:before {
+  left: 0;
+}
+
+#Heading:after {
+  right: 0;
+}
+
+p.serviceLogo {
+  width: 80px;
+}
+/*# sourceMappingURL=style.css.map */
