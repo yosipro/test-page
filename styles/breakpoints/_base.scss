@@ -39,9 +39,6 @@ body {
   right: 0;
 }
 
-p.serviceLogo {
-  width: 80px;
-}
-
 /* サービスロゴ */
-@import "../modules/service-logo.scss";
+@import "../modules/service-logo";
+@import "../modules/service-logo-image"

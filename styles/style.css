@@ -40,14 +40,18 @@ body {
   right: 0;
 }
 
-p.serviceLogo {
-  width: 80px;
-}
-
 /* サービスロゴ */
 .service-logo__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.service-logo-image {
+  width: 80px;
+}
+
+.service-logo-image__logo {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
