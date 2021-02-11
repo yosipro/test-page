@@ -2,6 +2,7 @@ body {
     font-family: "Noto Sans JP";;
 }
 
+/* トップビュー */
 .jumbotron {
   /* background: linear-gradient(90deg, $grad1, $grad2); */
 }
@@ -41,3 +42,6 @@ body {
 p.serviceLogo {
   width: 80px;
 }
+
+/* サービスロゴ */
+@import "../modules/service-logo.scss";
