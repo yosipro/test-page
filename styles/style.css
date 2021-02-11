@@ -45,7 +45,7 @@ p.serviceLogo {
 }
 
 /* サービスロゴ */
-.service-logo__content--flex {
+.service-logo__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

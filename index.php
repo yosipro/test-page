@@ -68,7 +68,7 @@
       <div class="service-logo text-center">
         <div class="service-logo__content d-flex flex-row justify-content-center align-items-center">
           <p class="d-inline-flex lead serviceLogoText m-0">となりにコーチ</p>
-          <p class="service-logo__content--flex serviceLogo d-inline-flex m-0"><img alt="となりにコーチのサービスロゴ" src="images/serviceLogo.png" class="col img-fluid rounded-0"></p>
+          <p class="serviceLogo d-inline-flex m-0"><img alt="となりにコーチのサービスロゴ" src="images/serviceLogo.png" class="col img-fluid rounded-0"></p>
         </div>
         <p>1人ひとりに最適な勉強法を提案します.</p>
       </div>
